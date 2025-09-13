@@ -196,6 +196,25 @@ body {
     font-weight: 500;
 }
 
+/* lab tutorial */
+.aaai2026 {
+    padding: 6rem 0;
+    background: white;
+}
+
+.aaai2026-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.aaai2026-text p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
 /* Competitions Section */
 .competitions {
     padding: 6rem 0;
