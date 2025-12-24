@@ -196,23 +196,201 @@ body {
     font-weight: 500;
 }
 
-/* lab tutorial */
+/* AAAI 2026 Lab Section */
 .aaai2026 {
     padding: 6rem 0;
     background: white;
 }
 
-.aaai2026-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: center;
+.aaai2026-header {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.aaai2026-text p {
+.aaai2026-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.aaai2026-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.1rem;
     color: #4a5568;
+}
+
+.aaai2026-meta-item strong {
+    color: #2d3748;
+}
+
+.aaai2026-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.aaai2026-link {
+    color: #667eea;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #667eea;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.aaai2026-link:hover {
+    background: #667eea;
+    color: white;
+}
+
+.aaai2026-organizers {
+    font-size: 0.95rem;
+    color: #4a5568;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Program Schedule Table */
+.program-section {
+    margin-bottom: 3rem;
+}
+
+.program-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
     margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+}
+
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.program-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.program-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+
+.program-table tr:last-child td {
+    border-bottom: none;
+}
+
+.program-table tr:hover:not(.program-break) {
+    background-color: #f7fafc;
+}
+
+.program-break {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.program-break td {
+    text-align: center;
+    font-weight: 600;
+    color: #667eea;
+    padding: 1.5rem;
+}
+
+.program-time {
+    font-weight: 500;
+    color: #667eea;
+    white-space: nowrap;
+}
+
+.program-topic {
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.program-topic-desc {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 0.25rem;
+}
+
+.program-speaker {
+    color: #4a5568;
+}
+
+.program-resources {
+    min-width: 100px;
+}
+
+.colab-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    background: #f7fafc;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.colab-link:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .program-table {
+        font-size: 0.9rem;
+    }
+
+    .program-table th,
+    .program-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .program-table th:nth-child(4),
+    .program-table td:nth-child(4) {
+        display: none;
+    }
+
+    .aaai2026-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .program-section-title {
+        font-size: 1.25rem;
+    }
 }
 
 /* Competitions Section */
