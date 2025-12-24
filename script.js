@@ -110,20 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add loading animation for external links
-    const externalLinks = document.querySelectorAll('a[href^="http"]');
-    
-    externalLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            const originalText = this.textContent;
-            this.textContent = 'Loading...';
-            
-            setTimeout(() => {
-                this.textContent = originalText;
-            }, 1000);
-        });
-    });
-
     // Add keyboard navigation support
     document.addEventListener('keydown', function(e) {
         // Press 'h' to go to top
