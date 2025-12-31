@@ -1,5 +1,119 @@
 // VNN-COMP Website JavaScript
 
+// Tools data for all VNN-COMP years
+const toolsData = {
+    2025: [
+        { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
+        { name: "CORA", url: "https://cora.in.tum.de/" },
+        { name: "NeuralSAT", url: "https://github.com/dynaroars/neuralsat" },
+        { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
+        { name: "NNV", url: "https://github.com/verivital/nnv" },
+        { name: "PyRAT", url: "https://pyrat-analyzer.com/" },
+        { name: "Rover", url: null },
+        { name: "SobolBox", url: "https://github.com/dassarthak18/SobolBox" }
+    ],
+    2024: [
+        { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
+        { name: "CORA", url: "https://cora.in.tum.de/" },
+        { name: "Marabou", url: "https://github.com/NeuralNetworkVerification/Marabou" },
+        { name: "NeuralSAT", url: "https://github.com/dynaroars/neuralsat" },
+        { name: "neVer2", url: "https://github.com/NeVerTools/NeVer2" },
+        { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
+        { name: "NNV", url: "https://github.com/verivital/nnv" },
+        { name: "PyRAT", url: "https://pyrat-analyzer.com/" }
+    ],
+    2023: [
+        { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
+        { name: "FastBATLLNN", url: "https://github.com/jferlez/FastBATLLNN" },
+        { name: "Marabou", url: "https://github.com/NeuralNetworkVerification/Marabou" },
+        { name: "NeuralSAT", url: "https://github.com/dynaroars/neuralsat" },
+        { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
+        { name: "NNV", url: "https://github.com/verivital/nnv" },
+        { name: "PyRAT", url: "https://pyrat-analyzer.com/" }
+    ],
+    2022: [
+        { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
+        { name: "AVeriNN", url: "https://github.com/vishnuteja97/AVeriNN" },
+        { name: "CGDTest", url: null },
+        { name: "Debona", url: "https://github.com/ChristopherBrix/Debona" },
+        { name: "FastBATLLNN", url: "https://github.com/jferlez/FastBATLLNN" },
+        { name: "Marabou", url: "https://github.com/NeuralNetworkVerification/Marabou" },
+        { name: "MN-BaB", url: "https://github.com/eth-sri/mn-bab" },
+        { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
+        { name: "PeregriNN", url: "https://github.com/rcpsl/PeregriNN" },
+        { name: "VeriaPak", url: null },
+        { name: "VeriNet", url: "https://github.com/vas-group-imperial/VeriNet" }
+    ],
+    2021: [
+        { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
+        { name: "Debona", url: "https://github.com/ChristopherBrix/Debona" },
+        { name: "DNNF", url: "https://github.com/dlshriver/dnnf" },
+        { name: "ERAN", url: "https://github.com/eth-sri/eran" },
+        { name: "Marabou", url: "https://github.com/NeuralNetworkVerification/Marabou" },
+        { name: "NN-R", url: null },
+        { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
+        { name: "NNV", url: "https://github.com/verivital/nnv" },
+        { name: "NV.jl", url: "https://github.com/sisl/NeuralVerification.jl" },
+        { name: "OVAL", url: "https://github.com/oval-group/oval-bab" },
+        { name: "randgen", url: null },
+        { name: "RPM", url: "https://github.com/StanfordMSL/Neural-Network-Reach" },
+        { name: "Venus2", url: "https://github.com/vas-group-imperial/venus" },
+        { name: "VeriNet", url: "https://github.com/vas-group-imperial/VeriNet" }
+    ],
+    2020: [
+        { name: "ARFramework", url: "https://github.com/formal-verification-research/ARFramework" },
+        { name: "auto_LiRPA", url: "https://github.com/Verified-Intelligence/auto_LiRPA" },
+        { name: "CROWN-IBP", url: "https://github.com/huanzhang12/CROWN-IBP" },
+        { name: "DNNV", url: "https://github.com/dlshriver/DNNV" },
+        { name: "ERAN", url: "https://github.com/eth-sri/eran" },
+        { name: "Marabou", url: "https://github.com/NeuralNetworkVerification/Marabou" },
+        { name: "MIPVerify.jl", url: "https://github.com/vtjeng/MIPVerify.jl" },
+        { name: "Neurify", url: "https://github.com/tcwangshiqi-columbia/Neurify" },
+        { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
+        { name: "NNV", url: "https://github.com/verivital/nnv" },
+        { name: "NPAQ", url: "https://teobaluta.github.io/NPAQ/" },
+        { name: "PaRoT", url: null },
+        { name: "PeregriNN", url: "https://github.com/rcpsl/PeregriNN" },
+        { name: "PLNN", url: "https://github.com/oval-group/PLNN-verification" },
+        { name: "ReluVal", url: "https://github.com/tcwangshiqi-columbia/ReluVal" },
+        { name: "Sherlock", url: "https://github.com/souradeep-111/sherlock_2" },
+        { name: "Venus", url: "https://github.com/vas-group-imperial/venus" },
+        { name: "VeriNet", url: "https://github.com/vas-group-imperial/VeriNet" }
+    ]
+};
+
+// Generate aggregated tool data for the participants table
+function generateAggregatedToolData() {
+    const allTools = {};
+    const years = [2020, 2021, 2022, 2023, 2024, 2025];
+
+    years.forEach(year => {
+        toolsData[year].forEach(tool => {
+            const toolKey = tool.name.toLowerCase();
+            if (!allTools[toolKey]) {
+                allTools[toolKey] = {
+                    name: tool.name,
+                    url: tool.url,
+                    years: {}
+                };
+            }
+            allTools[toolKey].years[year] = true;
+            // Update URL if we have a better one
+            if (tool.url && !allTools[toolKey].url) {
+                allTools[toolKey].url = tool.url;
+            }
+        });
+    });
+
+    // Convert to array and sort by number of years participated (descending), then alphabetically
+    return Object.values(allTools).sort((a, b) => {
+        const aYears = Object.keys(a.years).length;
+        const bYears = Object.keys(b.years).length;
+        if (bYears !== aYears) return bYears - aYears;
+        return a.name.localeCompare(b.name);
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -182,6 +296,107 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize search functionality
     addSearchFunctionality();
+
+    // Populate tools lists for each year
+    function populateToolsLists() {
+        const years = [2020, 2021, 2022, 2023, 2024, 2025];
+
+        years.forEach(year => {
+            const toolsList = document.getElementById('tools-' + year);
+            if (toolsList && toolsData[year]) {
+                const grid = document.createElement('div');
+                grid.className = 'tools-list-grid';
+
+                toolsData[year].forEach(tool => {
+                    if (tool.url) {
+                        const link = document.createElement('a');
+                        link.href = tool.url;
+                        link.target = '_blank';
+                        link.textContent = tool.name;
+                        grid.appendChild(link);
+                    } else {
+                        const span = document.createElement('span');
+                        span.className = 'tool-no-link';
+                        span.textContent = tool.name;
+                        grid.appendChild(span);
+                    }
+                });
+
+                toolsList.appendChild(grid);
+            }
+        });
+    }
+
+    // Toggle tools list visibility
+    function setupToolsToggle() {
+        document.querySelectorAll('.tools-toggle').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const year = this.dataset.year;
+                const toolsList = document.getElementById('tools-' + year);
+
+                if (toolsList) {
+                    toolsList.classList.toggle('expanded');
+                    this.classList.toggle('active');
+                }
+            });
+        });
+    }
+
+    // Populate participants table
+    function populateParticipantsTable() {
+        const tableBody = document.getElementById('participants-table-body');
+        if (!tableBody) return;
+
+        const aggregatedData = generateAggregatedToolData();
+        const years = [2020, 2021, 2022, 2023, 2024, 2025];
+
+        aggregatedData.forEach(tool => {
+            const row = document.createElement('tr');
+
+            // Tool name cell
+            const nameCell = document.createElement('td');
+            if (tool.url) {
+                const link = document.createElement('a');
+                link.href = tool.url;
+                link.target = '_blank';
+                link.className = 'tool-link';
+                link.textContent = tool.name;
+                nameCell.appendChild(link);
+            } else {
+                nameCell.textContent = tool.name;
+            }
+            row.appendChild(nameCell);
+
+            // Year cells
+            years.forEach(year => {
+                const cell = document.createElement('td');
+                if (tool.years[year]) {
+                    cell.innerHTML = '<span class="checkmark">&#10003;</span>';
+                } else {
+                    cell.innerHTML = '<span class="no-participation">-</span>';
+                }
+                row.appendChild(cell);
+            });
+
+            tableBody.appendChild(row);
+        });
+    }
+
+    // Initialize tools functionality
+    populateToolsLists();
+    setupToolsToggle();
+    populateParticipantsTable();
+
+    // Add keyboard shortcut for participants
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'p' && !e.ctrlKey && !e.altKey) {
+            const participantsSection = document.querySelector('#participants');
+            if (participantsSection) {
+                participantsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
 
     console.log('VNN-COMP Website loaded successfully!');
 });

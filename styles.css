@@ -718,6 +718,142 @@ a[title="Google Scholar"]:active .scholar-icon {
     opacity: 0.6;
 }
 
+/* Participants Section */
+.participants {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.participants-table-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.participants-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.participants-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.participants-table th:first-child {
+    text-align: left;
+    min-width: 150px;
+}
+
+.participants-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.participants-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+.participants-table tr:last-child td {
+    border-bottom: none;
+}
+
+.participants-table tr:hover {
+    background-color: #f7fafc;
+}
+
+.participants-table .tool-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.participants-table .tool-link:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+.participants-table .checkmark {
+    color: #667eea;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.participants-table .no-participation {
+    color: #cbd5e0;
+}
+
+/* Tools List Inline Expansion */
+.tools-list {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.tools-list.expanded {
+    display: block;
+}
+
+.tools-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.5rem;
+}
+
+.tools-list a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #4a5568;
+    text-decoration: none;
+    background: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.tools-list a:hover {
+    background: #667eea;
+    color: white;
+}
+
+.tools-list span.tool-no-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #718096;
+    background: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.tools-toggle {
+    cursor: pointer;
+}
+
+.tools-toggle .toggle-icon {
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.tools-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {
@@ -781,6 +917,19 @@ a[title="Google Scholar"]:active .scholar-icon {
     
     .repo-grid {
         grid-template-columns: 1fr;
+    }
+
+    .participants-table {
+        font-size: 0.9rem;
+    }
+
+    .participants-table th,
+    .participants-table td {
+        padding: 0.5rem;
+    }
+
+    .tools-list-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
 
