@@ -2,6 +2,9 @@
 
 // Tools data for all VNN-COMP years
 const toolsData = {
+    2026: [
+        // Tools will be added as they register for VNN-COMP 2026
+    ],
     2025: [
         { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
         { name: "CORA", url: "https://cora.in.tum.de/" },
@@ -86,7 +89,7 @@ const toolsData = {
 // Generate aggregated tool data for the participants table
 function generateAggregatedToolData() {
     const allTools = {};
-    const years = [2020, 2021, 2022, 2023, 2024, 2025];
+    const years = [2020, 2021, 2022, 2023, 2024, 2025, 2026];
 
     years.forEach(year => {
         toolsData[year].forEach(tool => {
@@ -300,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Populate tools lists for each year
     function populateToolsLists() {
-        const years = [2020, 2021, 2022, 2023, 2024, 2025];
+        const years = [2020, 2021, 2022, 2023, 2024, 2025, 2026];
 
         years.forEach(year => {
             const toolsList = document.getElementById('tools-' + year);
@@ -350,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!tableBody) return;
 
         const aggregatedData = generateAggregatedToolData();
-        const years = [2020, 2021, 2022, 2023, 2024, 2025];
+        const years = [2020, 2021, 2022, 2023, 2024, 2025, 2026];
 
         aggregatedData.forEach(tool => {
             const row = document.createElement('tr');
