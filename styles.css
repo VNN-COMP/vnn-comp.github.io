@@ -1130,6 +1130,107 @@ a[title="Google Scholar"]:active .scholar-icon {
     transform: rotate(180deg);
 }
 
+/* Report Link Styling */
+.repo-link.report-link {
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border-left: 3px solid #667eea;
+}
+
+.repo-link.report-link:hover {
+    background: #667eea;
+    color: white;
+    border-left: 3px solid #667eea;
+}
+
+/* Publications Section */
+.publications-section {
+    margin-top: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.publications-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+}
+
+.overview-paper {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.overview-paper h4 {
+    font-size: 1.1rem;
+    color: #667eea;
+    margin-bottom: 0.75rem;
+}
+
+.paper-citation {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.paper-citation a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.paper-citation a:hover {
+    text-decoration: underline;
+}
+
+.bibtex-section h4 {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.copy-bibtex-btn {
+    padding: 0.4rem 0.8rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-bibtex-btn:hover {
+    background: #764ba2;
+    transform: translateY(-1px);
+}
+
+.copy-bibtex-btn.copied {
+    background: #48bb78;
+}
+
+.bibtex-code {
+    background: #2d3748;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {

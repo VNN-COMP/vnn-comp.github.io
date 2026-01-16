@@ -405,6 +405,37 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('VNN-COMP Website loaded successfully!');
 });
 
+// Copy BibTeX function
+function copyBibtex() {
+    const bibtexContent = document.getElementById('bibtex-content').textContent;
+    navigator.clipboard.writeText(bibtexContent).then(() => {
+        const btn = document.querySelector('.copy-bibtex-btn');
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+            btn.textContent = originalText;
+            btn.classList.remove('copied');
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy BibTeX:', err);
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = bibtexContent;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        const btn = document.querySelector('.copy-bibtex-btn');
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+            btn.textContent = 'Copy All';
+            btn.classList.remove('copied');
+        }, 2000);
+    });
+}
+
 // Add utility functions for potential future use
 window.VNNComp = {
     scrollToSection: function(sectionId) {
