@@ -92,7 +92,7 @@ Links that might be useful:
 - Deadline for submission of competition contribution papers: May TBD, 2026
 - Notification for competition contribution papers: May TBD, 2026
 - Camera ready deadline for competition contribution papers: May TBD, 2026
-
+- [Submit via Easychair](https://easychair.org/conferences/?conf=vnncomp26).
 
 ## Program Committee
 - [ThanhVu Nguyen](https://roars.dev) (Chair, GMU)
