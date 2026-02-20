@@ -3,10 +3,9 @@
 
 In addition to tool and benchmark submission, we welcome papers that provide overviews of the underlying techniques and other engineering relevance of the tools and benchmarks that are submitted to the competition. These competition contribution papers are peer reviewed and published in the proceedings of the competition as part of [SAIV 2026](https://aiverification.org/2026/), which is co-located with [CAV 2026](https://conferences.i-cav.org/2026/).  
 
-Note that while contribution papers are optional for the competition, only tools that participate in competition are eligible for contribution paper submission. Moreover, while these contribution papers are peer reviewed, they are mainly to describe the tools or benchmarks and aspects relevant for the competition. The papers are not full research papers and **do not prevent** the authors from submitting a full research paper of their work to SAIV, CAV, or other conferences.
+Note that while contribution papers are optional for the competition, _only tools and benchmarks that participate in competition are eligible for contribution paper submission_. Moreover, while these contribution papers are peer reviewed, they are mainly to describe the tools or benchmarks and aspects relevant for the competition. The papers are not full research papers and **do not prevent** the authors from submitting a full research paper of their work to SAIV, CAV, or other conferences.
 
 Also note that the papers will be due before the competition itself takes place this summer and therefore are not expected to have results from VNN-COMP'26. Instead, it is fine that the paper discusses results from other venues or other evaluations the authors have conducted. If your tool has participated in previous VNN-COMPs, you can include and discuss them.  
-
 
 ## General Format
 
@@ -19,67 +18,69 @@ Similarly to contribution papers at other competitions such as SV-COMP (e.g., [S
 
 The following structure is recommended (but not required) for the contribution paper. However, sections on the tool setup and data availability are mandatory. As mentioned above, the paper is not anonymized, and the authors should ensure that the paper does not violate any copyright or intellectual property rights.
 
-- Title, Authors, and Abstract
+- **Title, Authors, and Abstract**
     - For title, it is a good idea to mention the name of the tool and/or technique (or a combination thereof) in the title.
     - The title needs to have **(Competition Contribution)** as a suffix, e.g., ToolName: Approach Name (Competition Contribution).
-- Introduction or Verification Approach
+- **Introduction or Verification Approach**
     - Provide a short overview of the algorithm or approach that the tool is based on. Avoid technical details, but provide a high-level overview of the approach. If necessary, refer to other papers for more details.
-- Tool/Software Architecture
+- **Tool/Software Architecture**
     - Libraries and external tools that the verification tool uses (e.g., parser frontend, SAT solver)
     - Software structure and architecture (e.g., components that are used in the competition)
     - Implementation technology (e.g., programming language)
-- Discussion of Assumptions, Limitations, Strengths, and Weaknesses of the Approach
+- **Discussion of Assumptions, Limitations, Strengths, and Weaknesses of the Approach**
     - Mention assumptions and limitations of the approach (e.g., what assumptions were made, what is not supported, what is not working)
     - Discussion of the strengths and weaknesses of the approach used in the tool
-- Tool Setup and Configuration
+- **Tool Setup and Configuration**
     - Download instructions: a public web page from which the tool can be downloaded) including a reference to a precise version of the tool (do not refer to ``the latest version'' or such, because that is not stable and not replicable)
     - Installation instructions
     - Benchmark Participation statement: a statement which benchmark categories the verifier participates in
     - Configuration definition: a statement about configuration or run profile used (did the tool run with a default configuration or was it configured for the competition?)
         - If the tool is not configured for the competition, provide the default parameter set used in the competition
         - If the tool is configured for different benchmark categories, summarize the configuration used for each category
-- Software Project and Contributors
+- **Software Project and Contributors**
     - Contact info (web page of the project, people involved in the project)
     - Information about the software project, licensing, development model, institution that hosts the software project, acknowledgement of contributors
-- Data-Availability Statement
+- **Data-Availability Statement**
     - Provide the URL of the project web site and repository.
     - Optional, but recommend: publish (e.g., on Zenodo) your tool archive and reference it here (via DOI) to ensure reproducibility, 
-- References
+- **References**
     - Bibliographic references to more in-depth papers about the approaches used in the tool.
 
-- Examples:
-    - Some examples of contribution papers:  https://scholar.google.com/scholar?q=%22competition+contribution%22+tacas&hl=en&as_sdt=0%2C43&as_ylo=2023 
-    - mre examples:  search for `"Competition Contribution"` from the PDF
-    - SV-COMP'24 Contribution Papers
-    - SV-COMP'23 Contribution Papers 
-    - SV-COMP'22 Contribution Papers
+#### Examples
+- Examples of VNN-COMP contribution papers from SAIV. Download the book in PDF and search for `Competition Contribution`
+    - [SAIV'25](https://link.springer.com/book/10.1007/978-3-031-99991-8): might require subscription to access the book
+- Some examples of contribution papers:  https://scholar.google.com/scholar?q=%22competition+contribution%22+tacas&hl=en&as_sdt=0%2C43&as_ylo=2023 
+- More examples:  Download the book in PDF and search for `Competition Contribution`
+    - [SV-COMP'24 Contribution Papers](https://link.springer.com/book/10.1007/978-3-031-57246-3)
+    - [SV-COMP'23 Contribution Papers](https://link.springer.com/chapter/10.1007/978-3-030-99527-0_24)
+    - [SV-COMP'22 Contribution Papers](https://link.springer.com/book/10.1007/978-3-031-57246-3)
 
 
 
 ### Benchmark Papers
 #### Content Suggestion
-- Title, Authors, and Abstract
+- **Title, Authors, and Abstract**
     - For title, it is a good idea to mention the name of the benchmark and/or technique (or a combination thereof) in the title.
     - The title needs to have **(Competition Contribution)** as a suffix, e.g., BenchmarkName: Approach Name (Competition Contribution)
-- Introduction and Motivation
+- **Introduction and Motivation**
     - Describe the problem domain, real-world relevance, or verification challenge your benchmark addresses.
-- Network Architecture Overview:
+- **Network Architecture Overview**
     - Detail the neural network model(s) involved, including architecture, training data, and performance characteristics.
-- Specification Details:
+- **Specification Details**
     - Define the formal properties or specifications (e.g., robustness, reachability) verified against the network.
-- Benchmark Setup:
+- **Benchmark Setup**
     - Provide a pointer to the benchmark code repository.
     - Include installation/setup instructions, input/output formats, and example scripts.
-- Discussion of Difficulty and Relevance:
+- **Discussion of Difficulty and Relevance**
     - Explain why these benchmarks matter for the verification community.
     - Discuss assumptions, limitations, and strengths.
-- Software Project and Contributors
+- **Software Project and Contributors**
     - Contact info (web page of the project, people involved in the project)
     - Information about the software project, licensing, development model, institution that hosts the software project, acknowledgement of contributors
-- Data-Availability Statement
+- **Data-Availability Statement**
     - Provide the URL of the project web site and repository.
     - Optional, but recommend: publish (e.g., on Zenodo) your tool archive and reference it here (via DOI) to ensure reproducibility, 
-- References
+- **References**
     - Bibliographic references to more in-depth papers about the approaches used in the tool.
 
 Links that might be useful:
