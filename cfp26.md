@@ -89,9 +89,9 @@ Links that might be useful:
 
 
 ## Important Dates and Deadlines
-- Deadline for submission of competition contribution papers: May TBD, 2026
-- Notification for competition contribution papers: May TBD, 2026
-- Camera ready deadline for competition contribution papers: May TBD, 2026
+- Deadline for submission of competition contribution papers: May 15, 2026
+- Notification for competition contribution papers: May 25, 2026
+- Camera ready deadline for competition contribution papers: May 29, 2026
 - [Submit via Easychair](https://easychair.org/conferences/?conf=vnncomp26).
 
 ## Program Committee
