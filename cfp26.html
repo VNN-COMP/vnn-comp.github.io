@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNN-COMP'26 Competition Contribution Papers - Call for Papers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .cfp-content {
+            padding: 3rem 0;
+        }
+        .cfp-content h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+        .cfp-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        .cfp-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #444;
+        }
+        .cfp-content h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        .cfp-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        .cfp-content ul {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+        .cfp-content ul li {
+            margin-bottom: 0.5rem;
+            line-height: 1.7;
+        }
+        .cfp-content ul ul {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .cfp-content a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .cfp-content a:hover {
+            text-decoration: underline;
+        }
+        .cfp-content em {
+            font-style: italic;
+        }
+        .cfp-content strong {
+            font-weight: 600;
+        }
+        .cfp-content code {
+            background: #f0f0f0;
+            padding: 0.15em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .dates-box {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .dates-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .dates-box li {
+            padding: 0.4rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo"><a href="index.html" style="color: white; text-decoration: none;">VNN-COMP</a></h1>
+                <p class="tagline">International Verification of Neural Networks Competition</p>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#vnncomp2026">VNN-COMP 2026</a></li>
+                    <li><a href="index.html#competitions">Competitions</a></li>
+                    <li><a href="index.html#repositories">Repositories</a></li>
+                    <li><a href="index.html#participants">Participants</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="cfp-content">
+                <a href="index.html#vnncomp2026" class="back-link">&larr; Back to VNN-COMP 2026</a>
+
+                <h1>VNN-COMP'26 Competition Contribution Papers</h1>
+
+                <p>
+                    In addition to tool and benchmark submission, we welcome papers that provide overviews of the underlying techniques and other engineering relevance of the tools and benchmarks that are submitted to the competition. These competition contribution papers are peer reviewed and published in the proceedings of the competition as part of <a href="https://aiverification.org/2026/">SAIV 2026</a>, which is co-located with <a href="https://conferences.i-cav.org/2026/">CAV 2026</a>.
+                </p>
+
+                <p>
+                    Note that while contribution papers are optional for the competition, <em>only tools and benchmarks that participate in competition are eligible for contribution paper submission</em>. Moreover, while these contribution papers are peer reviewed, they are mainly to describe the tools or benchmarks and aspects relevant for the competition. The papers are not full research papers and <strong>do not prevent</strong> the authors from submitting a full research paper of their work to SAIV, CAV, or other conferences.
+                </p>
+
+                <p>
+                    Also note that the papers will be due before the competition itself takes place this summer and therefore are not expected to have results from VNN-COMP'26. Instead, it is fine that the paper discusses results from other venues or other evaluations the authors have conducted. If your tool has participated in previous VNN-COMPs, you can include and discuss them.
+                </p>
+
+                <h2>General Format</h2>
+
+                <p>
+                    VNN-COMP'26 contribution papers uses a <strong>single-blind</strong> policy, so submissions are <em>not anonymized</em>. We require to use <strong>LNCS format</strong>. The papers to be published must have <strong>at least 4 pages of text</strong> (excluding data-availability and funding statements, references), and may be up to <strong>6 pages in total</strong>. The paper must be submitted via the VNN-COMP submission site of <a href="https://easychair.org/conferences/?conf=vnncomp26">Easychair</a>.
+                </p>
+
+                <h3>Tool Papers</h3>
+                <h4>Content Suggestions</h4>
+
+                <p>
+                    Similarly to contribution papers at other competitions such as SV-COMP (e.g., <a href="https://sv-comp.sosy-lab.org/2025/submission.php">SV-COMP'25 contribution submission</a>), the contribution paper should describe the competition contribution, including an outline of the concepts, technology, libraries, and tool infrastructure used in the competition, installation instructions, a specification of the version and parameters to be used for the competition.
+                </p>
+
+                <p>
+                    The following structure is recommended (but not required) for the contribution paper. However, sections on the tool setup and data availability are mandatory. As mentioned above, the paper is not anonymized, and the authors should ensure that the paper does not violate any copyright or intellectual property rights.
+                </p>
+
+                <ul>
+                    <li><strong>Title, Authors, and Abstract</strong>
+                        <ul>
+                            <li>For title, it is a good idea to mention the name of the tool and/or technique (or a combination thereof) in the title.</li>
+                            <li>The title needs to have <strong>(Competition Contribution)</strong> as a suffix, e.g., ToolName: Approach Name (Competition Contribution).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Introduction or Verification Approach</strong>
+                        <ul>
+                            <li>Provide a short overview of the algorithm or approach that the tool is based on. Avoid technical details, but provide a high-level overview of the approach. If necessary, refer to other papers for more details.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tool/Software Architecture</strong>
+                        <ul>
+                            <li>Libraries and external tools that the verification tool uses (e.g., parser frontend, SAT solver)</li>
+                            <li>Software structure and architecture (e.g., components that are used in the competition)</li>
+                            <li>Implementation technology (e.g., programming language)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Discussion of Assumptions, Limitations, Strengths, and Weaknesses of the Approach</strong>
+                        <ul>
+                            <li>Mention assumptions and limitations of the approach (e.g., what assumptions were made, what is not supported, what is not working)</li>
+                            <li>Discussion of the strengths and weaknesses of the approach used in the tool</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tool Setup and Configuration</strong>
+                        <ul>
+                            <li>Download instructions: a public web page from which the tool can be downloaded, including a reference to a precise version of the tool (do not refer to "the latest version" or such, because that is not stable and not replicable)</li>
+                            <li>Installation instructions</li>
+                            <li>Benchmark Participation statement: a statement which benchmark categories the verifier participates in</li>
+                            <li>Configuration definition: a statement about configuration or run profile used (did the tool run with a default configuration or was it configured for the competition?)
+                                <ul>
+                                    <li>If the tool is not configured for the competition, provide the default parameter set used in the competition</li>
+                                    <li>If the tool is configured for different benchmark categories, summarize the configuration used for each category</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Software Project and Contributors</strong>
+                        <ul>
+                            <li>Contact info (web page of the project, people involved in the project)</li>
+                            <li>Information about the software project, licensing, development model, institution that hosts the software project, acknowledgement of contributors</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data-Availability Statement</strong>
+                        <ul>
+                            <li>Provide the URL of the project web site and repository.</li>
+                            <li>Optional, but recommended: publish (e.g., on Zenodo) your tool archive and reference it here (via DOI) to ensure reproducibility.</li>
+                        </ul>
+                    </li>
+                    <li><strong>References</strong>
+                        <ul>
+                            <li>Bibliographic references to more in-depth papers about the approaches used in the tool.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Examples</h4>
+                <ul>
+                    <li>Examples of VNN-COMP contribution papers from SAIV. Download the book in PDF and search for <code>Competition Contribution</code>
+                        <ul>
+                            <li><a href="https://link.springer.com/book/10.1007/978-3-031-99991-8">SAIV'25</a>: might require subscription to access the book</li>
+                        </ul>
+                    </li>
+                    <li>Some examples of contribution papers: <a href="https://scholar.google.com/scholar?q=%22competition+contribution%22+tacas&hl=en&as_sdt=0%2C43&as_ylo=2023">Google Scholar search</a></li>
+                    <li>More examples: Download the book in PDF and search for <code>Competition Contribution</code>
+                        <ul>
+                            <li><a href="https://link.springer.com/book/10.1007/978-3-031-57246-3">SV-COMP'24 Contribution Papers</a></li>
+                            <li><a href="https://link.springer.com/chapter/10.1007/978-3-030-99527-0_24">SV-COMP'23 Contribution Papers</a></li>
+                            <li><a href="https://link.springer.com/book/10.1007/978-3-031-57246-3">SV-COMP'22 Contribution Papers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Benchmark Papers</h3>
+                <h4>Content Suggestion</h4>
+
+                <ul>
+                    <li><strong>Title, Authors, and Abstract</strong>
+                        <ul>
+                            <li>For title, it is a good idea to mention the name of the benchmark and/or technique (or a combination thereof) in the title.</li>
+                            <li>The title needs to have <strong>(Competition Contribution)</strong> as a suffix, e.g., BenchmarkName: Approach Name (Competition Contribution)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Introduction and Motivation</strong>
+                        <ul>
+                            <li>Describe the problem domain, real-world relevance, or verification challenge your benchmark addresses.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Network Architecture Overview</strong>
+                        <ul>
+                            <li>Detail the neural network model(s) involved, including architecture, training data, and performance characteristics.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Specification Details</strong>
+                        <ul>
+                            <li>Define the formal properties or specifications (e.g., robustness, reachability) verified against the network.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Benchmark Setup</strong>
+                        <ul>
+                            <li>Provide a pointer to the benchmark code repository.</li>
+                            <li>Include installation/setup instructions, input/output formats, and example scripts.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Discussion of Difficulty and Relevance</strong>
+                        <ul>
+                            <li>Explain why these benchmarks matter for the verification community.</li>
+                            <li>Discuss assumptions, limitations, and strengths.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Software Project and Contributors</strong>
+                        <ul>
+                            <li>Contact info (web page of the project, people involved in the project)</li>
+                            <li>Information about the software project, licensing, development model, institution that hosts the software project, acknowledgement of contributors</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data-Availability Statement</strong>
+                        <ul>
+                            <li>Provide the URL of the project web site and repository.</li>
+                            <li>Optional, but recommended: publish (e.g., on Zenodo) your tool archive and reference it here (via DOI) to ensure reproducibility.</li>
+                        </ul>
+                    </li>
+                    <li><strong>References</strong>
+                        <ul>
+                            <li>Bibliographic references to more in-depth papers about the approaches used in the tool.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>Links that might be useful:</p>
+                <ul>
+                    <li><a href="https://github.com/ChristopherBrix/vnncomp2024_benchmarks/tree/main/benchmarks">VNN-COMP2024 benchmarks repository</a></li>
+                    <li>Prior discussion threads on <a href="https://github.com/verivital/vnncomp2024/issues/2">benchmark requirements</a></li>
+                </ul>
+
+                <h2>Important Dates and Deadlines</h2>
+
+                <div class="dates-box">
+                    <ul>
+                        <li><strong>Deadline for submission of competition contribution papers:</strong> May TBD, 2026</li>
+                        <li><strong>Notification for competition contribution papers:</strong> May TBD, 2026</li>
+                        <li><strong>Camera ready deadline for competition contribution papers:</strong> May TBD, 2026</li>
+                        <li><a href="https://easychair.org/conferences/?conf=vnncomp26"><strong>Submit via Easychair</strong></a></li>
+                    </ul>
+                </div>
+
+                <h2>Program Committee</h2>
+
+                <ul>
+                    <li><a href="https://roars.dev">ThanhVu Nguyen</a> (Chair, GMU)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>VNN-COMP</h3>
+                    <p>International Verification of Neural Networks Competition</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#competitions">Competitions</a>
+                    <a href="index.html#repositories">Repositories</a>
+                    <a href="index.html#participants">Participants</a>
+                    <a href="https://github.com/VNN-COMP" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VNN-COMP. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
