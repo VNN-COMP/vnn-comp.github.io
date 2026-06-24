@@ -523,6 +523,20 @@ a[title="Google Scholar"]:active .scholar-icon {
     border-bottom: 2px solid #667eea;
 }
 
+/* FLoC Olympic Games callout — gold accent to stand out among the white cards */
+.olympics-callout {
+    background: linear-gradient(135deg, #fffaf0 0%, #ffffff 65%);
+    border-left: 5px solid #f6b73c;
+}
+
+.olympics-callout .vnncomp2026-section-title {
+    border-bottom-color: #f6b73c;
+}
+
+.olympics-cta {
+    margin-top: 1.25rem;
+}
+
 /* News Timeline */
 .news-timeline {
     display: flex;
