@@ -1,3 +1,10 @@
+/* Brand color tokens */
+:root {
+    --brand: #667eea;          /* primary brand purple (decorative / large headings) */
+    --brand-dark: #764ba2;     /* secondary brand purple */
+    --brand-link: #5a51d6;     /* darker purple for small/interactive text — WCAG AA (5.86:1 on white) */
+}
+
 /* CSS Reset and Base Styles */
 * {
     margin: 0;
@@ -420,9 +427,11 @@ a[title="Google Scholar"]:active .scholar-icon {
         padding: 0.75rem 0.5rem;
     }
 
-    .program-table th:nth-child(4),
-    .program-table td:nth-child(4) {
-        display: none;
+    /* Keep the Resources column (Colab/slides/eval links) visible; allow horizontal scroll instead of hiding it */
+    .program-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .aaai2026-meta {
@@ -715,6 +724,106 @@ a[title="Google Scholar"]:active .scholar-icon {
     .participation-grid,
     .committee-grid,
     .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Sponsors Section */
+.sponsors {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sponsor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid #edf2f7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(102, 126, 234, 0.15);
+}
+
+.sponsor-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 1.5rem;
+}
+
+.sponsor-logo {
+    max-height: 64px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.sponsor-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+}
+
+.sponsor-desc {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+}
+
+.sponsor-visit {
+    margin-top: auto;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.sponsor-visit:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+.sponsors-cta {
+    text-align: center;
+    margin-top: 3rem;
+    color: #4a5568;
+    font-size: 1.05rem;
+}
+
+.sponsors-cta a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sponsors-cta a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sponsors-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -1334,5 +1443,134 @@ a[title="Google Scholar"]:active .scholar-icon {
     .timeline-links {
         flex-direction: column;
         gap: 0.5rem;
+    }
+}
+
+/* ==========================================================================
+   Accessibility & WCAG AA contrast
+   ========================================================================== */
+
+/* Skip-to-content link (visible on keyboard focus) */
+.skip-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-200%);
+    z-index: 1000;
+    background: #ffffff;
+    color: var(--brand-link);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Visible keyboard focus indicator */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--brand-link);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Darker brand purple for small / interactive text to meet AA (4.5:1 on white) */
+.researcher-link,
+.aaai2026-link,
+.vnncomp2026-link,
+.timeline-link,
+.program-time,
+.participants-table .tool-link,
+.paper-citation a,
+.overview-paper h4,
+.committee-role h4,
+.sponsors-cta a,
+.sponsor-visit {
+    color: var(--brand-link);
+}
+
+/* Bump borderline-grey body text to AA */
+.program-topic-desc,
+.tools-list span.tool-no-link {
+    color: #5b6472;
+}
+
+.participants-table .no-participation {
+    color: #64748b;
+}
+
+/* Pill / button hover and solid-fill controls: white text needs the darker fill for AA */
+.aaai2026-link:hover,
+.vnncomp2026-link:hover,
+.timeline-link:hover,
+.repo-link:hover {
+    background: var(--brand-link);
+    color: #ffffff;
+}
+
+.resource-link:hover .resource-text,
+.speaker-link:hover {
+    color: var(--brand-link);
+}
+
+.copy-bibtex-btn {
+    background: var(--brand-link);
+}
+
+.copy-bibtex-btn:hover {
+    background: var(--brand-dark);
+}
+
+/* Tools expand/collapse is now a real <button>; reset native button chrome to match .repo-link */
+button.tools-toggle {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #4a5568;
+}
+
+/* Disabled (no-target) repository links rendered as muted, non-interactive spans */
+.repo-link.disabled {
+    color: #64748b;
+    background: #f7fafc;
+    cursor: default;
+}
+
+.repo-link.disabled:hover {
+    background: #f7fafc;
+    color: #64748b;
+    transform: none;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .btn:hover,
+    .repo-card:hover,
+    .sponsor-card:hover,
+    .resource-link:hover,
+    .nav-list a:hover,
+    .contact-btn:hover,
+    .timeline-link:hover {
+        transform: none !important;
     }
 }

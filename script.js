@@ -258,6 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.createElement('input');
         searchInput.type = 'text';
         searchInput.placeholder = 'Search by year...';
+        searchInput.setAttribute('aria-label', 'Search repositories by year');
         searchInput.style.cssText = `
             width: 100%;
             max-width: 300px;
@@ -266,7 +267,6 @@ document.addEventListener('DOMContentLoaded', function() {
             border: 2px solid #e2e8f0;
             border-radius: 25px;
             font-size: 1rem;
-            outline: none;
             transition: border-color 0.3s ease;
         `;
         
@@ -340,8 +340,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const toolsList = document.getElementById('tools-' + year);
 
                 if (toolsList) {
-                    toolsList.classList.toggle('expanded');
+                    const nowExpanded = toolsList.classList.toggle('expanded');
                     this.classList.toggle('active');
+                    this.setAttribute('aria-expanded', nowExpanded ? 'true' : 'false');
                 }
             });
         });

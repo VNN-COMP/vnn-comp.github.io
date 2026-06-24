@@ -4,22 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VNN-COMP - International Verification of Neural Networks Competition</title>
+    <meta name="description" content="VNN-COMP is the premier international competition for neural network verification. VNN-COMP 2026 is co-located with SAIV at CAV / FLoC 2026 in Lisbon, Portugal, July 24-25, 2026.">
+    <link rel="canonical" href="https://vnn-comp.github.io/">
+    <meta name="theme-color" content="#667eea">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="VNN-COMP">
+    <meta property="og:title" content="VNN-COMP - International Verification of Neural Networks Competition">
+    <meta property="og:description" content="The premier international competition for neural network verification. VNN-COMP 2026: Lisbon, Portugal, July 24-25, 2026.">
+    <meta property="og:url" content="https://vnn-comp.github.io/">
+    <meta property="og:image" content="https://vnn-comp.github.io/images/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VNN-COMP - International Verification of Neural Networks Competition">
+    <meta name="twitter:description" content="The premier international competition for neural network verification. VNN-COMP 2026: Lisbon, Portugal, July 24-25, 2026.">
+    <meta name="twitter:image" content="https://vnn-comp.github.io/images/og-card.png">
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://vnn-comp.github.io/#organization",
+          "name": "VNN-COMP",
+          "alternateName": "International Verification of Neural Networks Competition",
+          "url": "https://vnn-comp.github.io/",
+          "logo": "https://vnn-comp.github.io/apple-touch-icon.png",
+          "sameAs": ["https://github.com/VNN-COMP"]
+        },
+        {
+          "@type": "Event",
+          "name": "VNN-COMP 2026 - 7th International Verification of Neural Networks Competition",
+          "startDate": "2026-07-24",
+          "endDate": "2026-07-25",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "url": "https://vnn-comp.github.io/#vnncomp2026",
+          "location": {
+            "@type": "Place",
+            "name": "SAIV 2026 @ CAV / FLoC 2026",
+            "address": { "@type": "PostalAddress", "addressLocality": "Lisbon", "addressCountry": "PT" }
+          },
+          "organizer": { "@id": "https://vnn-comp.github.io/#organization" }
+        },
+        {
+          "@type": "Event",
+          "name": "VNN-COMP @ AAAI 2026 Lab Forum (LH03)",
+          "startDate": "2026-01-21T08:30:00+08:00",
+          "endDate": "2026-01-21T12:30:00+08:00",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "url": "https://vnn-comp.github.io/#aaai2026",
+          "location": {
+            "@type": "Place",
+            "name": "Singapore EXPO, Peridot 203",
+            "address": { "@type": "PostalAddress", "addressLocality": "Singapore", "addressCountry": "SG" }
+          },
+          "organizer": { "@id": "https://vnn-comp.github.io/#organization" }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <h1 class="logo">VNN-COMP</h1>
+                <div class="logo">VNN-COMP</div>
                 <p class="tagline">International Verification of Neural Networks Competition</p>
             </div>
-            <nav class="nav">
+            <nav class="nav" aria-label="Primary">
                 <ul class="nav-list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#vnncomp2026">VNN-COMP 2026</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
                     <li><a href="#aaai2026">AAAI 2026 Lab Forum</a></li>
                     <li><a href="#competitions">Competitions</a></li>
                     <li><a href="#repositories">Repositories</a></li>
@@ -30,11 +104,11 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
         <section id="hero" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h2 class="hero-title">Advancing Neural Network Verification</h2>
+                    <h1 class="hero-title">Advancing Neural Network Verification</h1>
                     <p class="hero-description">
                         VNN-COMP is the premier international competition dedicated to evaluating and advancing
                         the state-of-the-art in neural network verification. Join researchers and practitioners
@@ -67,12 +141,12 @@
                     </div>
                     <div class="about-stats">
                         <div class="stat">
-                            <span class="stat-number">8</span>
-                            <span class="stat-label">Years Running</span>
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">Competition Editions (2020&ndash;2026)</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">50+</span>
-                            <span class="stat-label">Participants</span>
+                            <span class="stat-label">Participating Tools</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">100+</span>
@@ -80,196 +154,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="aaai2026" class="aaai2026">
-            <div class="container">
-                <h2 class="section-title">VNN-COMP @ AAAI 2026 Lab Forum</h2>
-
-                <div class="aaai2026-header">
-                    <div class="aaai2026-meta">
-                        <div class="aaai2026-meta-item">
-                            <strong>LH03: The Verification of Neural Networks Competition (VNN-COMP): A Lab for Benchmark Proposers, Verification Tool Participants, and the Broader AI Community</strong>
-                        </div>
-                    </div>
-
-                    <div class="aaai2026-meta">
-                        <div class="aaai2026-meta-item">
-                            <strong>Lab Code:</strong> LH03
-                        </div>
-                        <div class="aaai2026-meta-item">
-                            <strong>Date:</strong> Wednesday, January 21, 2026
-                        </div>
-                        <div class="aaai2026-meta-item">
-                            <strong>Time:</strong> 8:30am - 12:30pm (SGT)
-                        </div>
-                        <div class="aaai2026-meta-item">
-                            <strong>Location:</strong> Singapore EXPO Peridot 203
-                        </div>
-                    </div>
-
-                    <div class="aaai2026-links">
-                        <a href="https://aaai.org/conference/aaai/aaai-26/tutorial-and-lab-forum/" class="aaai2026-link" target="_blank">AAAI Tutorial & Lab Forum</a>
-                        <a href="https://aaai.org/conference/aaai/aaai-26/tutorial-and-lab-list/#lh03" class="aaai2026-link" target="_blank">Official Lab Listing</a>
-                        <a href="https://us06web.zoom.us/rec/play/KarLj4gsRffD2up9af66oq87bLwkhFRRJMjSF1QoOB7rt-xhnPXAUkGiIim9qtnP3sNjbgJzA3zSeXtw.u1oVfHr1_gvr2g0N?eagerLoadZvaPages=sidemenu.billing.plan_management&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&startTime=1768953526000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2F_C6EkM8AvZHAJLa-5_evHoCVqsLoLQEa32OfPy239QhbroNOgRpRcyXdL_ai6TMa.0mHNy1PYLZSmUynP%3FstartTime%3D1768953526000" class="aaai2026-link" target="_blank">Video Recording</a>
-						<a href="https://underline.io/events/520/sessions?eventSessionId=21957&searchGroup=lecture" class="aaai2026-link" target="_blank">Underline Platform Details</a>
-                    </div>
-
-                    <p class="aaai2026-organizers">
-                        <strong>Organizers:</strong>
-                        <a href="https://www.taylortjohnson.com/" class="researcher-link" target="_blank">Taylor T. Johnson</a><a href="https://scholar.google.com/citations?user=MdTkXNYAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://research.manchester.ac.uk/en/persons/edoardo-manino" class="researcher-link" target="_blank">Edoardo Manino</a><a href="https://scholar.google.com/citations?user=pzCa2LQAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://www.gmu.edu/profiles/tvn" class="researcher-link" target="_blank">ThanhVu Nguyen</a><a href="https://scholar.google.com/citations?user=TLcVQ-MAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://www.christopher-brix.de/" class="researcher-link" target="_blank">Christopher Brix</a><a href="https://scholar.google.com/citations?user=u8QQWX0AAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://www.aim.rwth-aachen.de/people.html" class="researcher-link" target="_blank">Konstantin Kaulen</a><a href="https://scholar.google.com/citations?user=r00Fgx0AAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://www.cs.cmu.edu/~cliu6/" class="researcher-link" target="_blank">Changliu Liu</a><a href="https://scholar.google.com/citations?user=vvzAfOwAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://ziweiwangthu.github.io/" class="researcher-link" target="_blank">Ziwei Wang</a><a href="https://scholar.google.com/citations?user=cMTW09EAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://research-repository.uwa.edu.au/en/persons/matthew-daggitt" class="researcher-link" target="_blank">Matthew L. Daggitt</a><a href="https://scholar.google.ca/citations?user=eFO2mFoAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a><br>
-                        <em>With additional contributions from
-                        <a href="https://stanleybak.com/" class="researcher-link" target="_blank">Stanley Bak</a><a href="https://scholar.google.com/citations?user=IzNAqc8AAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://woodingben.com/" class="researcher-link" target="_blank">Ben Wooding</a><a href="https://scholar.google.com/citations?user=YhOmz1kAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        <a href="https://toladner.github.io/" class="researcher-link" target="_blank">Tobias Ladner</a><a href="https://scholar.google.com/citations?user=MJKVO5cAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
-                        and other VNN-COMP organizers and participants</em>
-                    </p>
-                </div>
-
-                <!-- First Half -->
-                <div class="program-section">
-                    <h3 class="program-section-title">First Half: Foundations & Background (8:30am - 10:30am)</h3>
-                    <table class="program-table">
-                        <thead>
-                            <tr>
-                                <th>Time</th>
-                                <th>Topic</th>
-                                <th>Speaker(s)</th>
-                                <th>Resources</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="program-time">8:30 - 9:00</td>
-                                <td>
-                                    <div class="program-topic">Introduction to Neural Network Verification and Motivation</div>
-                                    <div class="program-topic-desc">Overview of verification approaches for safe, secure, and trustworthy AI systems. Importance of verification for AI in robotics (such as vision language action / VLA models) and other safety-critical and security-critical applications.</div>
-                                </td>
-                                <td class="program-speaker"><a href="https://www.taylortjohnson.com/" class="speaker-link" target="_blank">Taylor T. Johnson</a>, <a href="https://ziweiwangthu.github.io/" class="speaker-link" target="_blank">Ziwei Wang</a></td>
-                                <td class="program-resources"><a href="https://bit.ly/aaai26vnncomp_slides" class="speaker-link" target="_blank">Slides</a></td>
-                            </tr>
-                            <tr>
-                                <td class="program-time">9:00 - 9:30</td>
-                                <td>
-                                    <div class="program-topic">VNN-COMP Overview: History, Rules, Results</div>
-                                    <div class="program-topic-desc">Competition history, rules, VNN-COMP'25 results, and plans for VNN-COMP'26.</div>
-                                </td>
-                                <td class="program-speaker"><a href="https://www.aim.rwth-aachen.de/people.html" class="speaker-link" target="_blank">Konstantin Kaulen</a></td>
-                                <td class="program-resources"></td>
-                            </tr>
-                            <tr>
-                                <td class="program-time">9:30 - 10:00</td>
-                                <td>
-                                    <div class="program-topic">VNN-LIB and Benchmarks Overview</div>
-                                    <div class="program-topic-desc">Benchmark formats (VNN-LIB 1.0/2.0, ONNX), current benchmark landscape, and solicitation for new benchmarks.</div>
-                                </td>
-                                <td class="program-speaker"><a href="https://research-repository.uwa.edu.au/en/persons/matthew-daggitt" class="speaker-link" target="_blank">Matthew Daggitt</a>, <a href="https://research.manchester.ac.uk/en/persons/edoardo-manino" class="speaker-link" target="_blank">Edoardo Manino</a></td>
-                                 <td class="program-resources"><a href="https://www.vnnlib.org/" class="speaker-link">VNN-LIB</a></a></td>
-                            </tr>
-                            <tr>
-                                <td class="program-time">10:00 - 10:30</td>
-                                <td>
-                                    <div class="program-topic">Q&A Session</div>
-                                </td>
-                                <td class="program-speaker">All</td>
-                                <td class="program-resources"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Break -->
-                <div class="program-section">
-                    <table class="program-table">
-                        <tbody>
-                            <tr class="program-break">
-                                <td colspan="4">Coffee Break (10:30am - 11:00am)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Second Half -->
-                <div class="program-section">
-                    <h3 class="program-section-title">Second Half: Hands-On Participation (11:00am - 12:30pm)</h3>
-                    <table class="program-table">
-                        <thead>
-                            <tr>
-                                <th>Time</th>
-                                <th>Topic</th>
-                                <th>Speaker(s)</th>
-                                <th>Resources</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="program-time">11:00 - 11:15</td>
-                                <td>
-                                    <div class="program-topic">Introduction to Neural Network Verification and VNN-COMP (Interactive Demo)</div>
-                                    <div class="program-topic-desc">Interactive demo: introduction to interactive portion and running neural network verification tools on benchmarks for VNN-COMP.</div>
-                                </td>
-                                <td class="program-speaker">
-                                    <a href="https://scholar.google.com/citations?user=r00Fgx0AAAAJ" class="speaker-link" target="_blank">Konstantin Kaulen</a>
-                                </td>
-                                <td class="program-resources">
-                                    <a href="https://colab.research.google.com/drive/1zbJ5tYQggejpxGxxbdvJT5BjHDv0sqQ1?usp=sharing" class="speaker-link" target="_blank">Google Colab</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="program-time">11:15 - 11:45</td>
-                                <td>
-                                    <div class="program-topic">How to Participate as a Benchmark Proposer (Interactive Demo)</div>
-                                    <div class="program-topic-desc">Interactive demo: creating ONNX files, VNN-LIB properties, repository structure, and submission process.</div>
-                                </td>
-                                <td class="program-speaker">
-                                    <a href="https://research.manchester.ac.uk/en/persons/edoardo-manino" class="speaker-link" target="_blank">Edoardo Manino</a>
-                                </td>
-                                <td class="program-resources">
-                                    <a href="https://colab.research.google.com/drive/1h80iiy8xFMriIU7umQFuclB7cU2v1CbR?usp=sharing" class="speaker-link" target="_blank">Google Colab</a>                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="program-time">11:45 - 12:00</td>
-                                <td>
-                                    <div class="program-topic">How to Participate as a Tool Developer (Interactive Demo)</div>
-                                    <div class="program-topic-desc">Rules for verification tools, participation advice, demo of verification tools, and parser libraries.</div>
-                                </td>
-                                <td class="program-speaker"><a href="https://sammsaski.github.io/" class="speaker-link" target="_blank">Samuel Sasaki</a></td>
-                                <td class="program-resources">
-                                    <a href="https://colab.research.google.com/drive/1MDqRGwYOz4CwC0C44sWEV6PwErxL-D2d?usp=sharing" class="speaker-link" target="_blank">Google Colab</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="program-time">12:00 - 12:15</td>
-                                <td>
-                                    <div class="program-topic">VNN-COMP Evaluation System (Interactive Demo)</div>
-                                    <div class="program-topic-desc">Overview of AWS-based competition evaluation infrastructure.</div>
-                                </td>
-                                <td class="program-speaker"><a href="https://www.aim.rwth-aachen.de/people.html" class="speaker-link" target="_blank">Konstantin Kaulen</a></td>
-                                <td class="program-resources"><a href="https://vnn.repeatability.cps.cit.tum.de/">Evaluation System</a></a></td>
-                            </tr>
-                            <tr>
-                                <td class="program-time">12:15 - 12:30</td>
-                                <td>
-                                    <div class="program-topic">Conclusions, References, and Questions&nbsp;Answer Session</div>
-                                    <div class="program-topic-desc">Pointers to references and learning resources and Q&nbsp;A.</div>
-                                </td>
-                                <td class="program-speaker"><a href="https://www.taylortjohnson.com/" class="speaker-link" target="_blank">Taylor T. Johnson</a></td>
-                                <td class="program-resources"></td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
             </div>
         </section>
 
@@ -298,6 +182,7 @@
 
                     <div class="vnncomp2026-links">
                         <a href="https://github.com/VNN-COMP/vnncomp2026" class="vnncomp2026-link" target="_blank">GitHub Repository</a>
+                        <a href="https://github.com/VNN-COMP/vnncomp2026_benchmarks" class="vnncomp2026-link" target="_blank">Benchmarks Repository</a>
                         <a href="https://github.com/VNN-COMP/vnncomp2026/blob/main/rules.md" class="vnncomp2026-link" target="_blank">Rules</a>
                         <a href="cfp26.html" class="vnncomp2026-link">Call for Papers</a>
                         <a href="https://forms.gle/Da7YNeEe21tp7XtL7" class="vnncomp2026-link" target="_blank">Registration</a>
@@ -473,7 +358,7 @@
                             <span class="resource-icon">📜</span>
                             <span class="resource-text">Competition Rules</span>
                         </a>
-                        <a href="https://vnncomp.christopher-brix.de/" class="resource-link" target="_blank">
+                        <a href="https://vnn.repeatability.cps.cit.tum.de/" class="resource-link" target="_blank" rel="noopener">
                             <span class="resource-icon">🖥️</span>
                             <span class="resource-text">Evaluation Platform</span>
                         </a>
@@ -487,6 +372,238 @@
             </div>
         </section>
 
+        <section id="sponsors" class="sponsors">
+            <div class="container">
+                <h2 class="section-title">VNN-COMP 2026 Sponsors</h2>
+                <p class="section-description">
+                    VNN-COMP 2026 is proudly supported by our sponsors, whose contributions help fund
+                    competition prizes and advance research in neural network verification.
+                </p>
+                <div class="sponsors-grid">
+                    <div class="sponsor-card">
+                        <a class="sponsor-logo-link" href="https://www.mathworks.com/" target="_blank" rel="noopener" aria-label="MathWorks">
+                            <img src="images/sponsors/mathworks.svg" alt="MathWorks" class="sponsor-logo" width="320" height="65">
+                        </a>
+                        <p class="sponsor-name">MathWorks</p>
+                        <p class="sponsor-desc">
+                            The MATLAB and Simulink product families are fundamental applied math and computational
+                            tools adopted by more than 6,500 universities and colleges. MathWorks products help prepare
+                            students for careers in industry, where the tools are widely used for data analysis,
+                            mathematical modeling, and algorithm development in collaborative research and new product
+                            development.
+                        </p>
+                        <a class="sponsor-visit" href="https://www.mathworks.com/" target="_blank" rel="noopener">Visit mathworks.com &rarr;</a>
+                    </div>
+                    <div class="sponsor-card">
+                        <a class="sponsor-logo-link" href="https://safeintelligence.ai/" target="_blank" rel="noopener" aria-label="Safe Intelligence">
+                            <img src="images/sponsors/safe-intelligence.png" alt="Safe Intelligence" class="sponsor-logo" width="300" height="65">
+                        </a>
+                        <p class="sponsor-name">Safe Intelligence</p>
+                        <p class="sponsor-desc">
+                            Safe Intelligence provides an AI validation and robustification platform for building
+                            robust, reliable machine learning systems. Its tools formally verify neural networks,
+                            identify model fragilities, and continuously monitor models &mdash; helping teams deploy
+                            trustworthy AI in business-critical applications.
+                        </p>
+                        <a class="sponsor-visit" href="https://safeintelligence.ai/" target="_blank" rel="noopener">Visit safeintelligence.ai &rarr;</a>
+                    </div>
+                </div>
+                <p class="sponsors-cta">
+                    Interested in sponsoring VNN-COMP? <a href="#contact">Get in touch with the organizers</a>.
+                </p>
+            </div>
+        </section>
+
+        <section id="aaai2026" class="aaai2026">
+            <div class="container">
+                <h2 class="section-title">VNN-COMP @ AAAI 2026 Lab Forum</h2>
+
+                <div class="aaai2026-header">
+                    <div class="aaai2026-meta">
+                        <div class="aaai2026-meta-item">
+                            <strong>LH03: The Verification of Neural Networks Competition (VNN-COMP): A Lab for Benchmark Proposers, Verification Tool Participants, and the Broader AI Community</strong>
+                        </div>
+                    </div>
+
+                    <div class="aaai2026-meta">
+                        <div class="aaai2026-meta-item">
+                            <strong>Lab Code:</strong> LH03
+                        </div>
+                        <div class="aaai2026-meta-item">
+                            <strong>Date:</strong> Wednesday, January 21, 2026
+                        </div>
+                        <div class="aaai2026-meta-item">
+                            <strong>Time:</strong> 8:30am - 12:30pm (SGT)
+                        </div>
+                        <div class="aaai2026-meta-item">
+                            <strong>Location:</strong> Singapore EXPO Peridot 203
+                        </div>
+                    </div>
+
+                    <div class="aaai2026-links">
+                        <a href="https://aaai.org/conference/aaai/aaai-26/tutorial-and-lab-forum/" class="aaai2026-link" target="_blank">AAAI Tutorial & Lab Forum</a>
+                        <a href="https://aaai.org/conference/aaai/aaai-26/tutorial-and-lab-list/#lh03" class="aaai2026-link" target="_blank">Official Lab Listing</a>
+                        <a href="https://us06web.zoom.us/rec/play/KarLj4gsRffD2up9af66oq87bLwkhFRRJMjSF1QoOB7rt-xhnPXAUkGiIim9qtnP3sNjbgJzA3zSeXtw.u1oVfHr1_gvr2g0N?eagerLoadZvaPages=sidemenu.billing.plan_management&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&startTime=1768953526000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2F_C6EkM8AvZHAJLa-5_evHoCVqsLoLQEa32OfPy239QhbroNOgRpRcyXdL_ai6TMa.0mHNy1PYLZSmUynP%3FstartTime%3D1768953526000" class="aaai2026-link" target="_blank">Video Recording</a>
+						<a href="https://underline.io/events/520/sessions?eventSessionId=21957&searchGroup=lecture" class="aaai2026-link" target="_blank">Underline Platform Details</a>
+                    </div>
+
+                    <p class="aaai2026-organizers">
+                        <strong>Organizers:</strong>
+                        <a href="https://www.taylortjohnson.com/" class="researcher-link" target="_blank">Taylor T. Johnson</a><a href="https://scholar.google.com/citations?user=MdTkXNYAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://research.manchester.ac.uk/en/persons/edoardo-manino" class="researcher-link" target="_blank">Edoardo Manino</a><a href="https://scholar.google.com/citations?user=pzCa2LQAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://www.gmu.edu/profiles/tvn" class="researcher-link" target="_blank">ThanhVu H. Nguyen</a><a href="https://scholar.google.com/citations?user=TLcVQ-MAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://www.christopher-brix.de/" class="researcher-link" target="_blank">Christopher Brix</a><a href="https://scholar.google.com/citations?user=u8QQWX0AAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://www.aim.rwth-aachen.de/people.html" class="researcher-link" target="_blank">Konstantin Kaulen</a><a href="https://scholar.google.com/citations?user=r00Fgx0AAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://www.cs.cmu.edu/~cliu6/" class="researcher-link" target="_blank">Changliu Liu</a><a href="https://scholar.google.com/citations?user=vvzAfOwAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://ziweiwangthu.github.io/" class="researcher-link" target="_blank">Ziwei Wang</a><a href="https://scholar.google.com/citations?user=cMTW09EAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://research-repository.uwa.edu.au/en/persons/matthew-daggitt" class="researcher-link" target="_blank">Matthew L. Daggitt</a><a href="https://scholar.google.ca/citations?user=eFO2mFoAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a><br>
+                        <em>With additional contributions from
+                        <a href="https://stanleybak.com/" class="researcher-link" target="_blank">Stanley Bak</a><a href="https://scholar.google.com/citations?user=IzNAqc8AAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://woodingben.com/" class="researcher-link" target="_blank">Ben Wooding</a><a href="https://scholar.google.com/citations?user=YhOmz1kAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        <a href="https://toladner.github.io/" class="researcher-link" target="_blank">Tobias Ladner</a><a href="https://scholar.google.com/citations?user=MJKVO5cAAAAJ" target="_blank" title="Google Scholar"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Scholar" class="scholar-icon"></a>,
+                        and other VNN-COMP organizers and participants</em>
+                    </p>
+                </div>
+
+                <!-- First Half -->
+                <div class="program-section">
+                    <h3 class="program-section-title">First Half: Foundations & Background (8:30am - 10:30am)</h3>
+                    <table class="program-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Topic</th>
+                                <th>Speaker(s)</th>
+                                <th>Resources</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="program-time">8:30 - 9:00</td>
+                                <td>
+                                    <div class="program-topic">Introduction to Neural Network Verification and Motivation</div>
+                                    <div class="program-topic-desc">Overview of verification approaches for safe, secure, and trustworthy AI systems. Importance of verification for AI in robotics (such as vision language action / VLA models) and other safety-critical and security-critical applications.</div>
+                                </td>
+                                <td class="program-speaker"><a href="https://www.taylortjohnson.com/" class="speaker-link" target="_blank">Taylor T. Johnson</a>, <a href="https://ziweiwangthu.github.io/" class="speaker-link" target="_blank">Ziwei Wang</a></td>
+                                <td class="program-resources"><a href="https://bit.ly/aaai26vnncomp_slides" class="speaker-link" target="_blank">Slides</a></td>
+                            </tr>
+                            <tr>
+                                <td class="program-time">9:00 - 9:30</td>
+                                <td>
+                                    <div class="program-topic">VNN-COMP Overview: History, Rules, Results</div>
+                                    <div class="program-topic-desc">Competition history, rules, VNN-COMP'25 results, and plans for VNN-COMP'26.</div>
+                                </td>
+                                <td class="program-speaker"><a href="https://www.aim.rwth-aachen.de/people.html" class="speaker-link" target="_blank">Konstantin Kaulen</a></td>
+                                <td class="program-resources"></td>
+                            </tr>
+                            <tr>
+                                <td class="program-time">9:30 - 10:00</td>
+                                <td>
+                                    <div class="program-topic">VNN-LIB and Benchmarks Overview</div>
+                                    <div class="program-topic-desc">Benchmark formats (VNN-LIB 1.0/2.0, ONNX), current benchmark landscape, and solicitation for new benchmarks.</div>
+                                </td>
+                                <td class="program-speaker"><a href="https://research-repository.uwa.edu.au/en/persons/matthew-daggitt" class="speaker-link" target="_blank">Matthew Daggitt</a>, <a href="https://research.manchester.ac.uk/en/persons/edoardo-manino" class="speaker-link" target="_blank">Edoardo Manino</a></td>
+                                 <td class="program-resources"><a href="https://www.vnnlib.org/" class="speaker-link" target="_blank" rel="noopener">VNN-LIB</a></td>
+                            </tr>
+                            <tr>
+                                <td class="program-time">10:00 - 10:30</td>
+                                <td>
+                                    <div class="program-topic">Q&A Session</div>
+                                </td>
+                                <td class="program-speaker">All</td>
+                                <td class="program-resources"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Break -->
+                <div class="program-section">
+                    <table class="program-table">
+                        <tbody>
+                            <tr class="program-break">
+                                <td colspan="4">Coffee Break (10:30am - 11:00am)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Second Half -->
+                <div class="program-section">
+                    <h3 class="program-section-title">Second Half: Hands-On Participation (11:00am - 12:30pm)</h3>
+                    <table class="program-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Topic</th>
+                                <th>Speaker(s)</th>
+                                <th>Resources</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="program-time">11:00 - 11:15</td>
+                                <td>
+                                    <div class="program-topic">Introduction to Neural Network Verification and VNN-COMP (Interactive Demo)</div>
+                                    <div class="program-topic-desc">Interactive demo: introduction to interactive portion and running neural network verification tools on benchmarks for VNN-COMP.</div>
+                                </td>
+                                <td class="program-speaker">
+                                    <a href="https://scholar.google.com/citations?user=r00Fgx0AAAAJ" class="speaker-link" target="_blank">Konstantin Kaulen</a>
+                                </td>
+                                <td class="program-resources">
+                                    <a href="https://colab.research.google.com/drive/1zbJ5tYQggejpxGxxbdvJT5BjHDv0sqQ1?usp=sharing" class="speaker-link" target="_blank">Google Colab</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-time">11:15 - 11:45</td>
+                                <td>
+                                    <div class="program-topic">How to Participate as a Benchmark Proposer (Interactive Demo)</div>
+                                    <div class="program-topic-desc">Interactive demo: creating ONNX files, VNN-LIB properties, repository structure, and submission process.</div>
+                                </td>
+                                <td class="program-speaker">
+                                    <a href="https://research.manchester.ac.uk/en/persons/edoardo-manino" class="speaker-link" target="_blank">Edoardo Manino</a>
+                                </td>
+                                <td class="program-resources">
+                                    <a href="https://colab.research.google.com/drive/1h80iiy8xFMriIU7umQFuclB7cU2v1CbR?usp=sharing" class="speaker-link" target="_blank">Google Colab</a>                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="program-time">11:45 - 12:00</td>
+                                <td>
+                                    <div class="program-topic">How to Participate as a Tool Developer (Interactive Demo)</div>
+                                    <div class="program-topic-desc">Rules for verification tools, participation advice, demo of verification tools, and parser libraries.</div>
+                                </td>
+                                <td class="program-speaker"><a href="https://sammsaski.github.io/" class="speaker-link" target="_blank">Samuel Sasaki</a></td>
+                                <td class="program-resources">
+                                    <a href="https://colab.research.google.com/drive/1MDqRGwYOz4CwC0C44sWEV6PwErxL-D2d?usp=sharing" class="speaker-link" target="_blank">Google Colab</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-time">12:00 - 12:15</td>
+                                <td>
+                                    <div class="program-topic">VNN-COMP Evaluation System (Interactive Demo)</div>
+                                    <div class="program-topic-desc">Overview of AWS-based competition evaluation infrastructure.</div>
+                                </td>
+                                <td class="program-speaker"><a href="https://www.aim.rwth-aachen.de/people.html" class="speaker-link" target="_blank">Konstantin Kaulen</a></td>
+                                <td class="program-resources"><a href="https://vnn.repeatability.cps.cit.tum.de/" target="_blank" rel="noopener">Evaluation System</a></td>
+                            </tr>
+                            <tr>
+                                <td class="program-time">12:15 - 12:30</td>
+                                <td>
+                                    <div class="program-topic">Conclusions, References, and Questions&nbsp;Answer Session</div>
+                                    <div class="program-topic-desc">Pointers to references and learning resources and Q&nbsp;A.</div>
+                                </td>
+                                <td class="program-speaker"><a href="https://www.taylortjohnson.com/" class="speaker-link" target="_blank">Taylor T. Johnson</a></td>
+                                <td class="program-resources"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
         <section id="competitions" class="competitions">
             <div class="container">
                 <h2 class="section-title">Competition Years</h2>
@@ -495,7 +612,7 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">VNN-COMP 2026</h3>
-                            <p class="timeline-description">7th iteration co-located with SAIV @ FLoC 2026 in Lisbon, Portugal.</p>
+                            <p class="timeline-description">7th iteration co-located with SAIV @ CAV / FLoC 2026 in Lisbon, Portugal.</p>
                             <div class="timeline-links">
                                 <a href="#vnncomp2026" class="timeline-link">Competition Site</a>
                                 <a href="#repo-2026" class="timeline-link">Repositories</a>
@@ -602,7 +719,7 @@
                         <h3 class="repo-year">2026</h3>
                         <div class="repo-links">
                             <a href="https://github.com/VNN-COMP/vnncomp2026_benchmarks" class="repo-link">Benchmarks</a>
-                            <a href="javascript:void(0)" class="repo-link tools-toggle" data-year="2026">Tools <span class="toggle-icon">▼</span></a>
+                            <button type="button" class="repo-link tools-toggle" data-year="2026" aria-expanded="false" aria-controls="tools-2026">Tools <span class="toggle-icon" aria-hidden="true">▼</span></button>
                             <a href="https://github.com/VNN-COMP/vnncomp2026_results" class="repo-link">Results</a>
                             <a href="https://github.com/VNN-COMP/vnncomp2026" class="repo-link">Documentation</a>
                         </div>
@@ -613,7 +730,7 @@
                         <h3 class="repo-year">2025</h3>
                         <div class="repo-links">
                             <a href="https://github.com/VNN-COMP/vnncomp2025_benchmarks" class="repo-link">Benchmarks</a>
-                            <a href="javascript:void(0)" class="repo-link tools-toggle" data-year="2025">Tools <span class="toggle-icon">▼</span></a>
+                            <button type="button" class="repo-link tools-toggle" data-year="2025" aria-expanded="false" aria-controls="tools-2025">Tools <span class="toggle-icon" aria-hidden="true">▼</span></button>
                             <a href="https://github.com/VNN-COMP/vnncomp2025_results" class="repo-link">Results</a>
                             <a href="https://github.com/VNN-COMP/vnncomp2025" class="repo-link">Documentation</a>
                             <a href="https://arxiv.org/abs/2512.19007" class="repo-link report-link" target="_blank">Report</a>
@@ -625,7 +742,7 @@
                         <h3 class="repo-year">2024</h3>
                         <div class="repo-links">
                             <a href="https://github.com/VNN-COMP/vnncomp2024_benchmarks" class="repo-link">Benchmarks</a>
-                            <a href="javascript:void(0)" class="repo-link tools-toggle" data-year="2024">Tools <span class="toggle-icon">▼</span></a>
+                            <button type="button" class="repo-link tools-toggle" data-year="2024" aria-expanded="false" aria-controls="tools-2024">Tools <span class="toggle-icon" aria-hidden="true">▼</span></button>
                             <a href="https://github.com/VNN-COMP/vnncomp2024_results" class="repo-link">Results</a>
                             <a href="https://github.com/VNN-COMP/vnncomp2024" class="repo-link">Documentation</a>
                             <a href="https://arxiv.org/abs/2412.19985" class="repo-link report-link" target="_blank">Report</a>
@@ -637,7 +754,7 @@
                         <h3 class="repo-year">2023</h3>
                         <div class="repo-links">
                             <a href="https://github.com/VNN-COMP/vnncomp2023_benchmarks" class="repo-link">Benchmarks</a>
-                            <a href="javascript:void(0)" class="repo-link tools-toggle" data-year="2023">Tools <span class="toggle-icon">▼</span></a>
+                            <button type="button" class="repo-link tools-toggle" data-year="2023" aria-expanded="false" aria-controls="tools-2023">Tools <span class="toggle-icon" aria-hidden="true">▼</span></button>
                             <a href="https://github.com/VNN-COMP/vnncomp2023_results" class="repo-link">Results</a>
                             <a href="https://github.com/VNN-COMP/vnncomp2023" class="repo-link">Documentation</a>
                             <a href="https://arxiv.org/abs/2312.16760" class="repo-link report-link" target="_blank">Report</a>
@@ -649,7 +766,7 @@
                         <h3 class="repo-year">2022</h3>
                         <div class="repo-links">
                             <a href="https://github.com/VNN-COMP/vnncomp2022_benchmarks" class="repo-link">Benchmarks</a>
-                            <a href="javascript:void(0)" class="repo-link tools-toggle" data-year="2022">Tools <span class="toggle-icon">▼</span></a>
+                            <button type="button" class="repo-link tools-toggle" data-year="2022" aria-expanded="false" aria-controls="tools-2022">Tools <span class="toggle-icon" aria-hidden="true">▼</span></button>
                             <a href="https://github.com/VNN-COMP/vnncomp2022_results" class="repo-link">Results</a>
                             <a href="https://github.com/VNN-COMP/vnncomp2022" class="repo-link">Documentation</a>
                             <a href="https://arxiv.org/abs/2212.10376" class="repo-link report-link" target="_blank">Report</a>
@@ -661,9 +778,9 @@
                         <h3 class="repo-year">2021</h3>
                         <div class="repo-links">
                             <a href="https://github.com/VNN-COMP/vnncomp2021" class="repo-link">Benchmarks</a>
-                            <a href="javascript:void(0)" class="repo-link tools-toggle" data-year="2021">Tools <span class="toggle-icon">▼</span></a>
+                            <button type="button" class="repo-link tools-toggle" data-year="2021" aria-expanded="false" aria-controls="tools-2021">Tools <span class="toggle-icon" aria-hidden="true">▼</span></button>
                             <a href="https://github.com/VNN-COMP/vnncomp2021_results" class="repo-link">Results</a>
-                            <a href="#" class="repo-link">Documentation</a>
+                            <span class="repo-link disabled" aria-disabled="true">Documentation (N/A)</span>
                             <a href="https://arxiv.org/abs/2109.00498" class="repo-link report-link" target="_blank">Report</a>
                         </div>
                         <div class="tools-list" id="tools-2021"></div>
@@ -673,9 +790,9 @@
                         <h3 class="repo-year">2020</h3>
                         <div class="repo-links">
                             <a href="https://github.com/VNN-COMP/vnncomp2020" class="repo-link">Benchmarks</a>
-                            <a href="javascript:void(0)" class="repo-link tools-toggle" data-year="2020">Tools <span class="toggle-icon">▼</span></a>
-                            <a href="#" class="repo-link">Results</a>
-                            <a href="#" class="repo-link">Documentation</a>
+                            <button type="button" class="repo-link tools-toggle" data-year="2020" aria-expanded="false" aria-controls="tools-2020">Tools <span class="toggle-icon" aria-hidden="true">▼</span></button>
+                            <span class="repo-link disabled" aria-disabled="true">Results (N/A)</span>
+                            <span class="repo-link disabled" aria-disabled="true">Documentation (N/A)</span>
                             <a href="https://www.overleaf.com/read/rbcfnbyhymmy" class="repo-link report-link" target="_blank">Report</a>
                         </div>
                         <div class="tools-list" id="tools-2020"></div>
@@ -696,9 +813,9 @@
                     <div class="overview-paper">
                         <h4>Overview Paper</h4>
                         <p class="paper-citation">
-                            C. Brix, S. Bak, C. Liu, and T. T. Johnson,
+                            C. Brix, M. N. Müller, S. Bak, T. T. Johnson, and C. Liu,
                             "<a href="https://doi.org/10.1007/s10009-023-00703-4" target="_blank">First three years of the international verification of neural networks competition (VNN-COMP)</a>,"
-                            <em>International Journal on Software Tools for Technology Transfer</em>, vol. 25, pp. 329-339, 2023.
+                            <em>International Journal on Software Tools for Technology Transfer</em>, vol. 25, no. 3, pp. 329-339, 2023.
                         </p>
                     </div>
 
@@ -706,9 +823,10 @@
                         <h4>BibTeX <button class="copy-bibtex-btn" onclick="copyBibtex()">Copy All</button></h4>
                         <pre class="bibtex-code" id="bibtex-content">@article{brix2023vnncomp_overview,
   title={First three years of the international verification of neural networks competition ({VNN-COMP})},
-  author={Brix, Christopher and Bak, Stanley and Liu, Changliu and Johnson, Taylor T.},
+  author={Brix, Christopher and M{\"u}ller, Mark Niklas and Bak, Stanley and Johnson, Taylor T. and Liu, Changliu},
   journal={International Journal on Software Tools for Technology Transfer},
   volume={25},
+  number={3},
   pages={329--339},
   year={2023},
   publisher={Springer},
@@ -792,7 +910,7 @@
                         <h3>Join the Community</h3>
                         <p>
                             Interested in participating or contributing to VNN-COMP? We welcome researchers,
-                            tool developers, sponsors, and organizations committed to advancing neural network verification in the broader safe AI, repsonsible AI, and trustworthy AI domains.
+                            tool developers, sponsors, and organizations committed to advancing neural network verification in the broader safe AI, responsible AI, and trustworthy AI domains.
                         </p>
                         <ul class="contact-list">
                             <li>Subscribe to our mailing list for updates</li>
@@ -818,13 +936,13 @@
                     <h3>VNN-COMP</h3>
                     <p>International Verification of Neural Networks Competition</p>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Footer">
                     <a href="#about">About</a>
                     <a href="#competitions">Competitions</a>
                     <a href="#repositories">Repositories</a>
                     <a href="#participants">Participants</a>
-                    <a href="https://github.com/VNN-COMP" target="_blank">GitHub</a>
-                </div>
+                    <a href="https://github.com/VNN-COMP" target="_blank" rel="noopener">GitHub</a>
+                </nav>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 VNN-COMP. Licensed under MIT License.</p>
