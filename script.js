@@ -3,7 +3,12 @@
 // Tools data for all VNN-COMP years
 const toolsData = {
     2026: [
-        // Tools will be added as they register for VNN-COMP 2026
+        { name: "CORA", url: "https://cora.in.tum.de/" },
+        { name: "NeuralSAT", url: "https://github.com/dynaroars/neuralsat" },
+        { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
+        { name: "NNV", url: "https://github.com/verivital/nnv" },
+        { name: "PyRAT", url: "https://pyrat-analyzer.com/" },
+        { name: "VibeCheck", url: "https://github.com/stanleybak/vibecheck-nn" }
     ],
     2025: [
         { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
