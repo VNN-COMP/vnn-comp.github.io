@@ -3,6 +3,7 @@
 // Tools data for all VNN-COMP years
 const toolsData = {
     2026: [
+        { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
         { name: "CORA", url: "https://cora.in.tum.de/" },
         { name: "N2V", url: "https://github.com/sammsaski/n2v" },
         { name: "NeuralSAT", url: "https://github.com/dynaroars/neuralsat" },
