@@ -4,6 +4,7 @@
 const toolsData = {
     2026: [
         { name: "CORA", url: "https://cora.in.tum.de/" },
+        { name: "N2V", url: "https://github.com/sammsaski/n2v" },
         { name: "NeuralSAT", url: "https://github.com/dynaroars/neuralsat" },
         { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
         { name: "NNV", url: "https://github.com/verivital/nnv" },
