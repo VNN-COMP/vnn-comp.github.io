@@ -610,6 +610,22 @@ a[title="Google Scholar"]:active .scholar-icon {
     font-weight: 500;
 }
 
+.saiv-venue {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.saiv-venue strong {
+    color: #2d3748;
+}
+
+.saiv-venue a {
+    color: var(--brand-link);
+    font-weight: 500;
+}
+
 .saiv-links {
     display: flex;
     flex-wrap: wrap;
