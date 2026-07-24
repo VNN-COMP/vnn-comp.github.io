@@ -4,12 +4,17 @@
 const toolsData = {
     2026: [
         { name: "α,β-CROWN", url: "https://github.com/Verified-Intelligence/alpha-beta-CROWN" },
+        { name: "Act", url: "https://github.com/SVF-tools/ACT" },
+        { name: "Agate", url: "https://github.com/veridnn/agate-vnncomp2026" },
+        { name: "Bright", url: null },
         { name: "CORA", url: "https://cora.in.tum.de/" },
         { name: "N2V", url: "https://github.com/sammsaski/n2v" },
         { name: "NeuralSAT", url: "https://github.com/dynaroars/neuralsat" },
         { name: "nnenum", url: "https://github.com/stanleybak/nnenum" },
         { name: "NNV", url: "https://github.com/verivital/nnv" },
         { name: "PyRAT", url: "https://pyrat-analyzer.com/" },
+        { name: "SobolBox", url: "https://doi.org/10.1007/978-3-031-99991-8_17" },
+        { name: "SuperSimple", url: "https://github.com/kkaulen/simple_vnn_comp_verifier" },
         { name: "VibeCheck", url: "https://github.com/stanleybak/vibecheck-nn" }
     ],
     2025: [
